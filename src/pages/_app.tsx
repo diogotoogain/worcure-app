@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import { SessionProvider } from 'next-auth/react'
 import { ThemeProvider } from 'styled-components'
 
 const theme = {
@@ -13,10 +14,12 @@ const theme = {
   }
 }
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <SessionProvider session={session}>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </SessionProvider>
   )
 }
