@@ -114,7 +114,7 @@ export class RealtimeService {
       try {
         callback(data);
       } catch (error) {
-        console.error(`Error in event listener for ${event}:`, error);
+        console.error('Error in event listener:', { event, error });
       }
     });
   }
