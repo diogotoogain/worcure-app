@@ -1,1 +1,29 @@
-{\n  "name": "worcure-app",\n  "version": "1.0.0",\n  "private": true,\n  "scripts": {\n    "dev": "next dev",\n    "build": "next build",\n    "start": "next start",\n    "lint": "next lint"\n  },\n  "dependencies": {\n    "next": "^13.4.0",\n    "react": "^18.2.0",\n    "react-dom": "^18.2.0",\n    "styled-components": "^6.0.0",\n    "@openai/api": "^0.1.0",\n    "@google/generative-ai": "^0.1.0",\n    "react-markdown": "^8.0.0",\n    "date-fns": "^2.30.0",\n    "lodash": "^4.17.21"\n  }\n}
+{
+  "name": "worcure-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^13.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.0",
+    "react-markdown": "^8.0.0",
+    "date-fns": "^2.30.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/lodash": "^4.14.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^13.4.0"
+  }
+}
